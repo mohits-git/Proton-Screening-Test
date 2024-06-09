@@ -1,4 +1,5 @@
 @import "../index.scss";
+$ColorBlack : #343541;
 
 @keyframes sendingDot2 {
   0% {
@@ -520,8 +521,8 @@
   z-index: 1000;
   height: 100%;
   width: 100%;
-  background: white;
-  color: #000000;
+  background-color: var(--body-background-color);
+  color: var(--body-color);
 
   .inner {
     display: flex;

@@ -30,6 +30,15 @@ const App = () => {
       document.body.className = "light";
     }
   };
+  const toggleTheme = () => {
+    const isDarkMode = localStorage.getItem("darkMode");
+    if(isDarkMode) {
+      changeColorMode(false);
+    }
+    else {
+        changeColorMode(true);
+    }
+  };
 
   const getFiles = async () => {
     let res = null;
@@ -72,6 +81,14 @@ const App = () => {
   return (
     <documentsContext.Provider value={{ documents, setDocuments, getFiles }}>
       <section className={user ? "main-grid" : null}>
+        <div className="theme-switcher">
+          <button
+            className="theme-switch-btn"
+            onClick={toggleTheme}
+          >
+            Switch Theme
+          </button>
+        </div>
         {user && (
           <div>
             <Menu

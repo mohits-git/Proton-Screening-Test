@@ -1,3 +1,4 @@
+$ColorBlack : #343541;
 .Auth .inner {
     .Contain {
         display: flex;
@@ -6,6 +7,8 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+        background-color: inherit;
+        color: inherit;
 
         .icon {
             margin-top: 2rem;
@@ -18,7 +21,6 @@
 
         h1 {
             padding-top: 5rem;
-            color: #2D333A;
             font-size: 32px;
         }
 
@@ -45,7 +47,7 @@
         }
 
         .active-label-green {
-            color: #191949;
+            color: inherit;
         }
 
         .active-label {
@@ -54,7 +56,7 @@
             padding-top: 0;
             margin-left: 10px;
             margin-top: -10px;
-            background: white;
+            background: inherit;
         }
 
         .warning-label {

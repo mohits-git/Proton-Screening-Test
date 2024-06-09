@@ -48,6 +48,7 @@ body {
   &:is(.light) {
     // body background
     background: white;
+    color: $ColorBlack;
 
     .currentColor {
       color: $ColorBlack;
@@ -57,6 +58,7 @@ body {
   &:is(.dark) {
     // body background
     background: rgba(52, 53, 65, 1);
+    color: #ECECF1;
 
     .currentColor {
       color: #ECECF1;
@@ -70,5 +72,16 @@ body {
 
   @media screen and (max-width:767px) {
     grid-template-columns: 100%;
+  }
+}
+
+.theme-switch-btn {
+  margin: 3px;
+  padding: 2px 4px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  &:hover {
+      background-color: rgba(217, 217, 227, .8);
   }
 }

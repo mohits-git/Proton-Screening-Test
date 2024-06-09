@@ -563,9 +563,20 @@
           cursor: pointer;
           transition: all 0.1s ease-in-out;
           -moz-transition: all 0.1s ease-in-out;
+          box-shadow: 2px 2px rgba($color: #191949, $alpha: 0.8);
 
           &:hover {
+            cursor: pointer;
             background: #191949;
+            background: #21215f;
+            box-shadow: 4px 4px rgba($color: #191949, $alpha: 0.8);
+            transform: translate(-2px, -2px);
+          }
+
+          &:active {
+            background: #21215f;
+            box-shadow: 2px 2px rgba($color: #191949, $alpha: 0.8);
+            transform: translate(0px, 0px);
           }
         }
       }
